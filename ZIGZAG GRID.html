@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zigzag grid</title>
+
+    <style>
+ 
+     #overview{
+         margin: auto;
+         width: 85%;
+         gap: 20px;
+         display: grid;
+         grid-template-columns:repeat(4, 1fr) ;
+         grid-template-rows: 150px 150px 150px;
+         grid-template-areas:
+         "a b b c"
+         "d d e f"
+         "g h i i"
+        
+        }
+
+     #overview>div:nth-child(1){
+         font-size:30px;
+         color:white;
+         background-color: teal;
+         border-radius: 6px;
+         padding:20px;
+         grid-area: a
+     }
+     #overview>div:nth-child(2){
+        font-size:30px;
+         color:white;
+         background-color: teal;
+         padding:20px;
+         border-radius: 6px;
+         grid-area: b 
+     }
+     #overview>div:nth-child(3){
+        font-size:30px;
+         color:white;
+         background-color: teal;
+         padding:20px;
+         border-radius: 6px;
+         grid-area: c 
+     }
+     #overview>div:nth-child(4){
+        font-size:30px;
+         color:white;
+         background-color: teal;
+         padding:20px;
+         border-radius: 6px;
+         grid-area: d
+     }
+     #overview>div:nth-child(5){
+        font-size:30px;
+         color:white;
+         background-color: teal;
+         padding:20px;
+         border-radius: 6px;
+         grid-area: e
+     }
+     #overview>div:nth-child(6){
+        font-size:30px;
+         color:white;
+         background-color: teal;
+         padding:20px;
+         border-radius: 6px;
+         grid-area: f
+     }
+     #overview>div:nth-child(7){
+        font-size:30px;
+         color:white;
+         background-color: teal;
+         padding:20px;
+         border-radius: 6px;
+         grid-area: g
+     }
+     #overview>div:nth-child(8){
+        font-size:30px;
+         color:white;
+         background-color: teal;
+         padding:20px;
+         border-radius: 6px;
+         grid-area: h
+     }
+     #overview>div:nth-child(9){
+        font-size:30px;
+         color:white;
+         background-color: teal;
+         padding:20px;
+         border-radius: 6px;
+         grid-area: i
+     }
+     
+
+
+    </style>
+
+</head>
+<body>
+    
+        <div id="overview">
+
+         <div></div>
+
+         <div></div>
+
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+
+        </div>
+
+</body>
+</html>
