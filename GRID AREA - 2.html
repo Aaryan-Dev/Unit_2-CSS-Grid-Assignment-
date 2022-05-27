@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area-2</title>
+
+<style>
+
+    #main {
+        margin: auto;
+        width: 90%;
+        height:500px;
+        display: flex;
+        justify-content:space-between;
+    }
+    #fir{
+         width: 75%;
+         gap: 10px;
+         display: grid;
+         grid-template-columns:repeat(3, 1fr) ;
+         grid-template-rows: repeat(3, 45%);
+         grid-template-areas:
+         "a a b "
+         "c d b"
+        
+        }
+
+        #fir>div:nth-child(1){
+         font-size:30px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         border-radius: 6px;
+         padding:20px;
+         grid-area: a
+     }
+     #fir>div:nth-child(2){
+        font-size:30px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         padding:20px;
+         border-radius: 6px;
+         grid-area: b 
+     }
+     #fir>div:nth-child(3){
+        font-size:30px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         padding:20px;
+         border-radius: 6px;
+         grid-area: c 
+     }
+     #fir>div:nth-child(4){
+        font-size:30px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         padding:20px;
+         border-radius: 6px;
+         grid-area: d
+     }
+
+
+
+    #main>div:nth-child(2) {
+        width:22%;
+        height:93%;
+        font-size:30px;
+        margin-left: 10px;
+        padding: 20px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         border-radius: 6px;
+    }
+
+</style>
+
+</head>
+<body>
+    
+<div id="main">
+
+    
+<div id="fir">
+    <div>A </div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</div>
+     
+<div>
+    <div>
+        E
+    </div>
+
+</div>
+    
+</div>
+
+</body>
+</html>
