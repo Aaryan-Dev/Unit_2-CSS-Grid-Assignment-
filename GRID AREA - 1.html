@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area-1</title>
+
+    <style>
+ 
+     #overview{
+         margin: auto;
+         width: 85%;
+         gap: 10px;
+         display: grid;
+         grid-template-columns:repeat(4, 1fr) ;
+         grid-template-rows: 150px 150px 150px;
+         grid-template-areas:
+         "a a b b"
+         "c d d d"
+         "e e e e"
+        
+        }
+
+     #overview>div:nth-child(1){
+         font-size:30px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         border-radius: 6px;
+         padding:20px;
+         grid-area: a
+     }
+     #overview>div:nth-child(2){
+        font-size:30px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         padding:20px;
+         border-radius: 6px;
+         grid-area: b 
+     }
+     #overview>div:nth-child(3){
+        font-size:30px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         padding:20px;
+         border-radius: 6px;
+         grid-area: c 
+     }
+     #overview>div:nth-child(4){
+        font-size:30px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         padding:20px;
+         border-radius: 6px;
+         grid-area: d
+     }
+     #overview>div:nth-child(5){
+        font-size:30px;
+         color:white;
+         background-color: rgb(57, 57, 57);
+         padding:20px;
+         border-radius: 6px;
+         grid-area: e
+     }
+     
+
+
+    </style>
+
+</head>
+<body>
+    
+        <div id="overview">
+
+         <div>A</div>
+
+         <div>B</div>
+
+         <div>C</div>
+         <div>D</div>
+         <div>E</div>
+
+        </div>
+
+</body>
+</html>
